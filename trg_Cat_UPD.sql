@@ -1,4 +1,4 @@
-ALTER TRIGGER nsm.trg_Cat_UPD
+CREATE TRIGGER nsm.trg_Cat_UPD
 	ON nsm.Cat
 	INSTEAD OF UPDATE
 AS 
