@@ -27,6 +27,7 @@ ORDER BY ParentID, PLeft;
 --> ENABLE TRIGGER nsm.trg_Cat_INS ON nsm.Cat;
 
 --Try these new additions after you've created/enabled the insert trigger!
+/*
 INSERT INTO nsm.Cat (ParentID, Name)
 VALUES	(8, 'Gidget');	--child of Widget, depth 3
 
@@ -35,3 +36,4 @@ VALUES	(NULL, 'Catnarok');	--new Root, depth 0
 
 INSERT INTO nsm.Cat (ParentID, Name)
 VALUES	(5, 'Smosh');	--child of Jack, depth 3
+*/
