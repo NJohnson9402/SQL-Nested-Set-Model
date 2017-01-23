@@ -13,6 +13,7 @@ How to get started
 Trying it out
 ---
 * Check out the `Sample Queries.sql` to see some SELECTs in action.
+* Revisit `Sample Data.sql` and run the comment-blocked INSERTs at the bottom.
 * Write your own INSERT/UPDATE/DELETE queries to build your favorite family of cats!
 
 I welcome any feedback, pull-requests, issues, suggestions, and rants!  Leave a comment on my blog (natethedba.wordpress.com), and of course, stalk me right here on GitHub!
