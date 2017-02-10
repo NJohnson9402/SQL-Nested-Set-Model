@@ -2,6 +2,13 @@
 USE DataModels;
 SELECT * FROM nsm.Cats ORDER BY PLeft
 
+/* DISCLAIMER *
+This script is for testing the validity of the RebuildCatTree proc.
+It contains transactions, and turns the triggers off/on.
+Therefore, the tests themselves are commented-out, and it is up to YOU
+to un-comment them if you want to run them, after reading thru them.
+*/
+
 /*
 --test 1: Smush/Smash/Smosh -> Smash/Smosh/Smush (alphabetical)
 SET XACT_ABORT ON;
