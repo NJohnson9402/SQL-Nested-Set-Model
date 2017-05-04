@@ -19,3 +19,5 @@ Trying it out
 I welcome any feedback, pull-requests, issues, suggestions, and rants!  Leave a comment on my blog (natethedba.wordpress.com), and of course, stalk me right here on GitHub!
 
 **Compatibility**: MS SQL Server 2008R2 & higher.
+
+I ask politely for attribution if you found these scripts helpful, but I'd settle for an upvote on StackOverflow and/or a comment/follow on my blog!  Cheers.
