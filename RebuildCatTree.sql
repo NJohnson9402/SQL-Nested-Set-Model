@@ -11,20 +11,17 @@ GO
 -- =============================================
 ALTER PROCEDURE nsm.RebuildCatTree
 	@ParentID INT = NULL
-	, @Position INT = 0
+	, @Position INT = NULL
 	, @Depth INT = 0
 AS
 BEGIN
 	SET NOCOUNT ON;
-	
-	--Starting depth; we will set this to the given Parent's Depth (or 0 if NULL)
-	--DECLARE @Depth INT
-	/*
-	SELECT @Depth = (CASE WHEN @ParentID IS NULL THEN 0 ELSE Depth END)
-		FROM nsm.Cat
-		WHERE (@ParentID IS NULL AND ParentID IS NULL)
-			OR ParentID = @ParentID
-	*/
+
+	--If no @Position passed, set it to the parent's
+	IF (@Position IS NULL)
+	BEGIN
+		SELECT @Position = PLeft FROM nsm.Cat WHERE CatID = @ParentID
+	END
 
 	--Cursor (loop) over child nodes of the given ParentID
 	DECLARE @Curff CURSOR 
